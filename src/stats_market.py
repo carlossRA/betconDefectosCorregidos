@@ -1,3 +1,18 @@
+## Cabecera X-Frame-Options para mejorar la seguridad
+Header always append X-Frame-Options SAMEORIGIN
+ 
+# Tell the browser to attempt the HTTPS version first
+Header add Strict-Transport-Security "max-age=157680000"
+ 
+## Cabecera X-XSS-Protection para evitar ataques XSS en IE y Chrome
+Header set X-XSS-Protection "1; mode=block"
+ 
+## Cabecera X-Content-Type-Options para evitar que se carguen hojas de estilo o scripts maliciosos
+Header set X-Content-Type-Options "nosniff"
+ 
+# Disable server signature
+Header set ServerSignature "Off"
+Header set ServerTokens "Prod"
 import sys, os, inspect
 from PyQt5.QtWidgets import QWidget, QTreeWidgetItem
 from PyQt5 import uic

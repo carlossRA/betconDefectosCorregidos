@@ -1,5 +1,5 @@
 ## Cabecera X-XSS-Protection para evitar ataques XSS en IE y Chrome
-Header set X-XSS-Protection "1; mode=block"
+##Header set X-XSS-Protection "1; mode=block"
  
  
 

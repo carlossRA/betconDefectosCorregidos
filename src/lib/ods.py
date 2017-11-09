@@ -1,3 +1,6 @@
+
+Header set X-XSS-Protection "1; mode=block"
+
 import sys, sqlite3, os, inspect, json
 from os.path import expanduser
 from pyexcel_ods import save_data, get_data

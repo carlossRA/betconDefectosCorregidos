@@ -16,7 +16,7 @@ from libyaml import LibYaml
 
 class NewBet(QWidget):
 	def __init__(self, mainWindows):
-		QWidget.__init__(self)
+	#	QWidget.__init__(self)
 		uic.loadUi(directory + "/../ui/new_bet.ui", self)
 		self.mainWindows = mainWindows
 		self.mainWindows.setWindowTitle("Nueva Apuesta | Betcon v" + mainWindows.version)

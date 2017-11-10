@@ -9,7 +9,7 @@ from func_aux import str_to_float
 
 class EditConjunta(QWidget):
 	def __init__(self, mainWindows, id):
-		QWidget.__init__(self)
+		#QWidget.__init__(self)
 		uic.loadUi(directory + "/../ui/new_conjunta.ui", self)
 		self.mainWindows = mainWindows
 		self.btnAccept.clicked.connect(self.accept)

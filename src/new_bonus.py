@@ -11,7 +11,7 @@ from func_aux import str_to_float
 
 class NewBonus(QWidget):
 	def __init__(self, mainWindows):
-		QWidget.__init__(self)
+	#	QWidget.__init__(self)
 		uic.loadUi(directory + "/../ui/new_bonus.ui", self)
 		self.mainWindows = mainWindows
 		self.btnAccept.clicked.connect(self.accept)

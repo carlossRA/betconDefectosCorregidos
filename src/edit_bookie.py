@@ -8,7 +8,7 @@ from bookie import Bookie
 
 class EditBookie(QWidget):
     def __init__(self, mainWindows, id):
-        QWidget.__init__(self)
+        #QWidget.__init__(self)
         uic.loadUi(directory + "/../ui/new_bookie.ui", self)
         self.mainWindows = mainWindows
         self.btnAccept.clicked.connect(self.accept)

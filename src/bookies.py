@@ -7,7 +7,7 @@ from bookie import Bookie
 
 class Bookies(QWidget):
 	def __init__(self, mainWindows):
-		QWidget.__init__(self)
+		#QWidget.__init__(self)
 		uic.loadUi(directory + "/../ui/bookies.ui", self)
 		self.mainWindows = mainWindows
 		mainWindows.diconnectActions()

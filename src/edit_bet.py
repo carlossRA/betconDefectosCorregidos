@@ -12,7 +12,7 @@ from func_aux import str_to_float, str_to_bool, key_from_value
 
 class EditBet(QWidget):
 	def __init__(self, mainWindows, id):
-		QWidget.__init__(self)
+		#QWidget.__init__(self)
 		uic.loadUi(directory + "/../ui/new_bet.ui", self)
 		self.mainWindows = mainWindows
 		self.mainWindows.setWindowTitle("Modificar Apuesta | Betcon v" + mainWindows.version)

@@ -9,7 +9,7 @@ from bbdd import Bbdd
 
 class Competitions(QWidget):
 	def __init__(self, mainWindows):
-		QWidget.__init__(self)
+		#QWidget.__init__(self)
 		uic.loadUi(directory + "/../ui/competitions.ui", self)
 		self.mainWindows = mainWindows
 		mainWindows.diconnectActions()

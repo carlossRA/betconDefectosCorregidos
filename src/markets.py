@@ -8,7 +8,7 @@ from bbdd import Bbdd
 
 class Markets(QWidget):
 	def __init__(self, mainWindows):
-		QWidget.__init__(self)
+	#	QWidget.__init__(self)
 		uic.loadUi(directory + "/../ui/markets.ui", self)
 		self.mainWindows = mainWindows
 		mainWindows.diconnectActions()

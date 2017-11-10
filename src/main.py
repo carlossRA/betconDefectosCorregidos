@@ -54,7 +54,7 @@ from settings import Settings
 
 class Main(QMainWindow):
 	def __init__(self):
-		QMainWindow.__init__(self)
+		#QMainWindow.__init__(self)
 		uic.loadUi(directory + "/../ui/wmain.ui", self)
 		self.showMaximized()
 		self.enableTools()
@@ -350,7 +350,7 @@ class Main(QMainWindow):
 
 class About(QDialog):
 	def __init__(self):
-		QDialog.__init__(self)
+		#QDialog.__init__(self)
 		uic.loadUi(directory + "/../ui/about.ui", self)
 		archivo = open(directory + "/version.txt")
 		version = archivo.readline()

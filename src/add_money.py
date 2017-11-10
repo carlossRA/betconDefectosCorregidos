@@ -10,7 +10,7 @@ from bbdd import Bbdd
 
 class AddMoney(QWidget):
 	def __init__(self, mainWindows):
-		QWidget.__init__(self)
+	#	QWidget.__init__(self)
 		uic.loadUi(directory + "/../ui/add_money.ui", self)
 		self.mainWindows = mainWindows
 		mainWindows.aNew.triggered.connect(mainWindows.newBank)

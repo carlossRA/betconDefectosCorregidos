@@ -8,7 +8,7 @@ from regions import Regions
 
 class NewRegion(QWidget):
 	def __init__(self, mainWindows):
-		QWidget.__init__(self)
+	       #QWidget.__init__(self)
 		uic.loadUi(directory + "/../ui/new_region.ui", self)
 		self.mainWindows = mainWindows
 		self.btnAccept.clicked.connect(self.accept)

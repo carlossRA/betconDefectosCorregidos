@@ -9,7 +9,7 @@ from func_aux import str_to_bool
 
 class Bonus(QWidget):
 	def __init__(self, mainWindows):
-		QWidget.__init__(self)
+		#QWidget.__init__(self)
 		uic.loadUi(directory + "/../ui/bonus.ui", self)
 		self.mainWindows = mainWindows
 		mainWindows.diconnectActions()
